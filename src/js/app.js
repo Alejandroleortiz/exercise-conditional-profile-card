@@ -51,6 +51,12 @@ function render(variables = {}) {
   let role = "Web Developer";
   if (variables.role !== null) role = variables.role;
 
+  let country = "USA";
+  if (variables.country !== null) country = variables.country;
+
+  let city = "Miami";
+  if (variables.city !== null) city = variables.city;
+
   let position = `<ul class="${variables.socialMediaPosition}"></ul>`;
   if (variables.socialMediaPosition == "right")
     position = "<ul class='position-right'>";
@@ -61,7 +67,7 @@ function render(variables = {}) {
           <img src="${variables.avatarURL}" class="photo" />
           <h1>${name} ${lastname}</h1>
           <h2>${role}</h2>
-          <h3>Miami, USA</h3>
+          <h3>${city}, ${country}</h3>
           <ul class="${variables.socialMediaPosition}">
             <li><a href="https://twitter.com/${twitter}"><i class="fab fa-twitter"></i></a></li>
             <li><a href="https://github.com/${github}"><i class="fab fa-github"></i></a></li>
