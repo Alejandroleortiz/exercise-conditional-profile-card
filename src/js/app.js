@@ -36,6 +36,9 @@ function render(variables = {}) {
   let lastname = "Boilett";
   if (variables.lastname !== null) lastname = variables.lastname;
 
+  let twitter = "4geeksacademy";
+  if (variables.twitter !== null) twitter = variables.twitter;
+
   let position = `<ul class="${variables.socialMediaPosition}"></ul>`;
   if (variables.socialMediaPosition == "right")
     position = "<ul class='position-right'>";
@@ -48,7 +51,7 @@ function render(variables = {}) {
           <h2>Web Developer</h2>
           <h3>Miami, USA</h3>
           <ul class="${variables.socialMediaPosition}">
-            <li><a href="https://twitter.com/4geeksacademy"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="https://twitter.com/${twitter}"><i class="fab fa-twitter"></i></a></li>
             <li><a href="https://github.com/4geeksacademy"><i class="fab fa-github"></i></a></li>
             <li><a href="https://linkedin.com/4geeksacademy"><i class="fab fa-linkedin"></i></a></li>
             <li><a href="https://instagram.com/4geeksacademy"><i class="fab fa-instagram"></i></a></li>
