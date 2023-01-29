@@ -48,6 +48,9 @@ function render(variables = {}) {
   let instagram = "4geeksacademy4";
   if (variables.instagram !== null) instagram = variables.instagram;
 
+  let role = "Web Developer";
+  if (variables.role !== null) role = variables.role;
+
   let position = `<ul class="${variables.socialMediaPosition}"></ul>`;
   if (variables.socialMediaPosition == "right")
     position = "<ul class='position-right'>";
@@ -57,7 +60,7 @@ function render(variables = {}) {
             ${cover}
           <img src="${variables.avatarURL}" class="photo" />
           <h1>${name} ${lastname}</h1>
-          <h2>Web Developer</h2>
+          <h2>${role}</h2>
           <h3>Miami, USA</h3>
           <ul class="${variables.socialMediaPosition}">
             <li><a href="https://twitter.com/${twitter}"><i class="fab fa-twitter"></i></a></li>
